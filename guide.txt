@@ -1,0 +1,34 @@
+华君统一系统数据考察方式
+用户：root 
+运行 sudo command
+
+选择一个ubuntu20.04
+
+部署一套（这样就有了docker，docker compose， etc）
+
+在/opt 添加一个文件夹，huajun_storage -> /opt/huajun_storage
+
+复制压缩任何工控机上的/opt/huajun文件夹，（tar -cf huajun.tar huajun)
+
+在此文件夹内，添加
+/opt/huajun_storage/看这个_模板.sh
+/opt/huajun_storage/添加_看这个.sh
+/opt/huajun_storage/admin_config.json
+/opt/huajun_storage/client_config.json
+
+在 /opt/huajun_storage 下面添加文件夹 （比如项目名称， project1）-> /opt/huajun_storage/project1
+
+复制huajun.tar到 /opt/huajun_storage/project1
+
+在此解压 /opt/huajun_storage/project1/huajun
+
+运行/opt/huajun_storage/添加_看这个.sh
+
+进入/opt/huajun_storage/project1
+
+运行/opt/huajun_storage/project1/看这个.sh
+
+在此看网页
+127.0.0.1：5173
+
+
